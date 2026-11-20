@@ -31,7 +31,7 @@
 
 ## 直接下载
 
-如果不想本地构建，可以在 [Releases](https://github.com/Jiangshishou/zhaiyi-web-summary-assistant/releases) 下载 `zhaiyi-web-summary-assistant-v1.26.zip`，解压后在 `chrome://extensions` 里选择「加载已解压的扩展程序」，指向解压后的目录。Chrome 不支持直接双击安装未上架的 `.crx`，所以这里提供的是 zip 包。
+如果不想本地构建，可以在 [Releases](https://github.com/Jiangshishou/zhaiyi-web-summary-assistant/releases) 下载 `zhaiyi-web-summary-assistant-v1.0.zip`，解压后在 `chrome://extensions` 里选择「加载已解压的扩展程序」，指向解压后的目录。Chrome 不支持直接双击安装未上架的 `.crx`，所以这里提供的是 zip 包。
 
 ## 安装（从源码构建）
 
