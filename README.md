@@ -1,6 +1,6 @@
 # 摘意（Zhaiyi）— 网页摘要助手
 
-摘意是一个 Chrome/Edge Manifest V3 扩展：在当前网页打开一个紧凑浮窗，自动抽取正文或视频字幕，生成结构化摘要，并支持围绕摘要继续追问。
+摘意是一个 Chrome/Edge Manifest V3 扩展：在当前网页打开一个紧凑浮窗，自动抽取正文或视频字幕，生成结构化摘要。
 
 ![摘意图标](public/icons/icon-128.png)
 
@@ -23,7 +23,7 @@
 - 支持自定义 OpenAI-compatible API，以及使用已登录会话的 DeepSeek 网页端。
 - 在浮窗设置里填写 API Key、Base URL，拉取并选择模型。
 - 摘要与对话可分别设置输出详细程度。
-- 支持自动/浅色/深色主题、拖动、收起、本地缓存和继续追问。
+- 支持自动/浅色/深色主题、拖动、收起和本地缓存。
 
 ## 支持站点
 
@@ -53,6 +53,7 @@ npm run build
 
 - **自定义 provider**：在浮窗设置里填写 Base URL、API Key，点击拉取模型并选择默认模型。
 - **DeepSeek 网页端**：先在浏览器登录 `chat.deepseek.com`，扩展会复用该会话。
+- **快捷键**：默认 `Ctrl+Shift+Y`，可在 `chrome://extensions/shortcuts`（Edge 为 `edge://extensions/shortcuts`）中自定义。
 - API Key 只保存在浏览器本地 `chrome.storage`，不会写入仓库。
 
 ## 隐私
