@@ -1,0 +1,17 @@
+node_modules/
+dist/
+release/
+.tmp/
+backups/
+.env
+.env.*
+.baoyu-skills/
+.scratch/
+.pi/
+.pi-glla/
+.claude/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

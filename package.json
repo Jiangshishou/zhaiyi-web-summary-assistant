@@ -1,0 +1,51 @@
+{
+  "name": "zhaiyi-web-summary-assistant",
+  "version": "1.26",
+  "private": true,
+  "description": "摘意 — 在网页上生成结构化摘要的 Chrome/Edge MV3 扩展。",
+  "license": "MIT",
+  "author": "Jiangshishou",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jiangshishou/zhaiyi-web-summary-assistant.git"
+  },
+  "homepage": "https://github.com/Jiangshishou/zhaiyi-web-summary-assistant#readme",
+  "bugs": {
+    "url": "https://github.com/Jiangshishou/zhaiyi-web-summary-assistant/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "diagnose:chrome": "node scripts/diagnose-chrome-extension.mjs",
+    "prune:dist-icons": "node scripts/prune-dist-icons.mjs",
+    "build:content": "esbuild src/content/index.ts --bundle --minify --format=iife --target=es2022 --jsx=automatic --loader:.css=text --alias:fs=./src/shims/emptyNodeModule.ts --alias:path=./src/shims/emptyNodeModule.ts --outfile=dist/assets/content.js",
+    "build": "npm run clean && tsc --noEmit && vite build && npm run build:content && npm run prune:dist-icons",
+    "test:jank": "vitest run tests/summary-stream-jank.perf.test.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/chrome": "^0.1.34",
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.27.3",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "jsdom": "^27.2.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.14"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@mozilla/readability": "^0.6.0",
+    "motion": "^12.42.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
