@@ -4,6 +4,16 @@
 
 ![摘意图标](public/icons/icon-128.png)
 
+## 界面预览
+
+<p align="center">
+  <img src="assets/screenshots/panel-light.png" alt="浅色模式下的摘要浮窗" width="48%" />
+  <img src="assets/screenshots/panel-dark.png" alt="深色模式下的摘要浮窗" width="48%" />
+</p>
+<p align="center">
+  <img src="assets/screenshots/settings-light.png" alt="设置面板" width="70%" />
+</p>
+
 ## 功能
 
 - 点击扩展图标或按 `Ctrl+Shift+Y`（macOS：`Command+Shift+Y`）打开浮窗并自动总结当前页面。
