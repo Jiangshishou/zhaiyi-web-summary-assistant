@@ -11,7 +11,7 @@
   <img src="assets/screenshots/panel-dark.png" alt="深色模式下的摘要浮窗" width="48%" />
 </p>
 <p align="center">
-  <img src="assets/screenshots/settings-light.png" alt="设置面板" width="70%" />
+  <img src="assets/screenshots/settings-light.png" alt="设置面板" width="48%" />
 </p>
 
 ## 功能
